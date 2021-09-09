@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<body>
+		{% extends 'base.html' %}
+
+		{% block app_content %}
+			<form action="" method="post">
+				<p>
+					<label for="mes">width</label>
+					<input type="number" name="width" min="2" max="50">
+				</p>
+				<p>
+					<label for="ad">height</label>
+					<input type="number" name="height" min="2" max="11">
+				</p>
+				<p>
+					<input type="submit">
+				</p>
+			</form>
+			<a class="btn btn-primary" href="{{ url_for('live') }}">Создать жизни</a>
+		{% endblock %}
+	</body>
+</html>

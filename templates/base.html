@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<body>
+		{% block content %}
+            <div class="content">
+                {% block app_content %}
+
+                {% endblock %}
+            </div>
+        {% endblock %}
+
+        {% block scripts %}
+            <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css"/>
+        {% endblock %}
+	</body>
+
+</html>
